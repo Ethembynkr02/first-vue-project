@@ -11,3 +11,9 @@ new Vue({
     text: 'merhaba dünya'
   }
 })
+new Vue({
+  el: '#vfor',
+  data: {
+    liste: ['Ethem', 'Ali', 'Emir']
+  }
+})

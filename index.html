@@ -10,8 +10,14 @@
     <div id="app">
       <h1>Merhaba Dünya</h1>
       <input type="text" id="text" v-model='text'>
-      {{text}}
+      {{text}}      
     </div>
-    <!-- built files will be auto injected -->
+    <div id="vfor">
+      <ul>
+        <li v-for="arkadasim in liste">
+          {{arkadasim}}
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
