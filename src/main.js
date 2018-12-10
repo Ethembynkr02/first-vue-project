@@ -14,6 +14,16 @@ new Vue({
 new Vue({
   el: '#vfor',
   data: {
-    liste: ['Ethem', 'Ali', 'Emir']
+    liste: ['Ethem', 'Ali', 'Emir'],
+    arkadasim: {
+      isim: 'Ethem',
+      yas: 23,
+      meslek: 'Mühendis'
+    }
+  },
+  methods: {
+    rastgeleListe () {
+      this.liste = this.liste.sort(() => Math.random() - 0.5)
+    }
   }
 })

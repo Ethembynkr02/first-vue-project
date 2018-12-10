@@ -14,8 +14,14 @@
     </div>
     <div id="vfor">
       <ul>
-        <li v-for="arkadasim in liste">
-          {{arkadasim}}
+        <li v-for="arkadasim in liste" v-bind:key="arkadasim">
+          {{arkadasim}} <input type="text"/>
+        </li>
+      </ul>
+      <button v-on:click='rastgeleListe'>Rastgele Liste</button>
+      <ul>
+        <li v-for="(ozellik, key, index) in arkadasim">
+          {{index}} - {{key}} {{ozellik}}
         </li>
       </ul>
     </div>
